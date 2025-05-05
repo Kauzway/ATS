@@ -2,7 +2,7 @@
 
 A comprehensive fintech application for analyzing Nifty indices stocks with advanced technical indicators and machine learning predictions.
 
-![ATS Dashboard](https://via.placeholder.com/800x450?text=ATS+Dashboard)
+![ATS Dashboard](https://github.com/Kauzway/ATS/blob/1e14ffd2f8c3ac547a2387fcc9113bc573f473e8/public/assets/images/ATS%20Logo.png)
 
 ## Features
 
