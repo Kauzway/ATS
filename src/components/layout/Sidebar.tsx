@@ -10,6 +10,7 @@ import {
   FiX,
   FiMenu
 } from 'react-icons/fi';
+import ATSLogo from '../common/ATSLogo'; // Import the new logo component
 
 interface SidebarProps {
   open: boolean;
@@ -79,8 +80,7 @@ const Sidebar = ({ open, setOpen }: SidebarProps) => {
           {/* Logo and close button */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-tv-border">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-ats-primary dark:text-white">ATS</span>
-              <span className="ml-2 text-gray-600 dark:text-gray-300 text-sm">Advanced Trading System</span>
+              <ATSLogo height={32} />
             </Link>
             
             {isSmallScreen && (

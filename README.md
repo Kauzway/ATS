@@ -2,7 +2,7 @@
 
 A comprehensive fintech application for analyzing Nifty indices stocks with advanced technical indicators and machine learning predictions.
 
-![ATS Dashboard](https://github.com/Kauzway/ATS/blob/1e14ffd2f8c3ac547a2387fcc9113bc573f473e8/public/assets/images/ATS%20Logo.png)
+<img src="public/assets/images/ATS Logo_white_no_bg.png" alt="ATS Logo" width="200"/>
 
 ## Features
 
@@ -96,6 +96,26 @@ The application is designed to be deployed on Google Cloud Run. Follow these ste
    ```bash
    gcloud run deploy ats-trading --image ats-trading --platform managed
    ```
+
+## API Keys Required for Deployment
+
+Before deploying, you'll need to obtain and configure the following API keys:
+
+1. **Stock Market Data API**: For real-time and historical stock data
+   - Configure in `.env.production` under `VITE_API_KEY` and `VITE_API_BASE_URL`
+   - Options include NSE India API, Alpha Vantage, or Yahoo Finance
+
+2. **Firebase** (if using authentication):
+   - Create a Firebase project and get configuration keys
+   - Configure in `.env.production` by uncommenting and filling in Firebase variables
+
+3. **Google Analytics** (optional):
+   - For tracking app usage with your Google Analytics ID
+   - Configure in `.env.production` under `VITE_GOOGLE_ANALYTICS_ID`
+
+4. **TensorFlow.js Model Hosting**:
+   - Host your trained ML model on a service like Google Cloud Storage
+   - Configure in `.env.production` under `VITE_TFJS_MODEL_URL`
 
 ## Disclaimer
 

@@ -10,6 +10,7 @@ import {
   FiUser,
   FiChevronDown
 } from 'react-icons/fi';
+import ATSLogo from '../common/ATSLogo'; // Import the logo component
 
 import { RootState } from '../../store';
 
@@ -108,6 +109,13 @@ const Header = ({ toggleSidebar, darkMode, toggleTheme }: HeaderProps) => {
           >
             <FiMenu className="h-6 w-6" />
           </button>
+          
+          {/* Logo visible on mobile screens */}
+          <div className="lg:hidden">
+            <Link to="/">
+              <ATSLogo height={28} />
+            </Link>
+          </div>
           
           {/* Market status indicator */}
           <div className="flex items-center">
