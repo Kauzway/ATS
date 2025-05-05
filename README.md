@@ -2,7 +2,7 @@
 
 A comprehensive fintech application for analyzing Nifty indices stocks with advanced technical indicators and machine learning predictions.
 
-<img src="public/assets/images/ATS Logo_white_no_bg.png" alt="ATS Logo" width="200"/>
+<img src="public/assets/images/ATS Logo.png" alt="ATS Logo" width="200"/>
 
 ## Features
 
